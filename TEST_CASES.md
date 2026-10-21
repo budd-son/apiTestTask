@@ -78,14 +78,13 @@
 
 | ID    | Что проверяем | Шаги | Ожидаемый результат |
 |-------|---------------|------|---------------------|
-| BIZ-1 | ACTION после LOGIN | LOGIN → ACTION | 200 OK, `result: OK` |
-| BIZ-2 | ACTION без LOGIN | ACTION | 403, `result: ERROR` |
-| BIZ-3 | LOGOUT без LOGIN | LOGOUT | 403, `message: "Token '<token>' not found"` |
-| BIZ-4 | Очистка сессии после LOGOUT | LOGIN → ACTION → LOGOUT → ACTION | Последний ACTION = 403 |
-| BIZ-5 | Повторный LOGIN тем же токеном | LOGIN → LOGIN | 409 Conflict, `message: "Token '<token>' already exists"` |
-| BIZ-6 | Двойной LOGOUT | LOGIN → LOGOUT → LOGOUT | Второй LOGOUT = 403 |
-| BIZ-7 | Многократный ACTION | LOGIN → ACTION ×3 | Все ACTION = 200 |
-| BIZ-8 | Цикл LOGIN → LOGOUT → LOGIN | 3 цикла | Каждый шаг = 200 |
+| BIZ-1 | ACTION без LOGIN | ACTION | 403, `result: ERROR` |
+| BIZ-2 | LOGOUT без LOGIN | LOGOUT | 403, `message: "Token '<token>' not found"` |
+| BIZ-3 | Очистка сессии после LOGOUT | LOGIN → ACTION → LOGOUT → ACTION | Последний ACTION = 403 |
+| BIZ-4 | Повторный LOGIN тем же токеном | LOGIN → LOGIN | 409 Conflict, `message: "Token '<token>' already exists"` |
+| BIZ-5 | Двойной LOGOUT | LOGIN → LOGOUT → LOGOUT | Второй LOGOUT = 403 |
+| BIZ-6 | Многократный ACTION | LOGIN → ACTION ×3 | Все ACTION = 200 |
+| BIZ-7 | Цикл LOGIN → LOGOUT → LOGIN | 3 цикла | Каждый шаг = 200 |
 
 ---
 
@@ -100,3 +99,4 @@
 
 **Известные проблемы:**
 - HTTP-1, HTTP-2, HTTP-3: приложение возвращает **500 Internal Server Error** вместо 405/415/404.
+- 

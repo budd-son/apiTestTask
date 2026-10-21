@@ -42,7 +42,7 @@ public class ValidationTokenTest extends BaseTest{
             "",
             "A1B2C3D4E5F6A1B2C3D4E5F6A1B2C3D ",
             " A1B2C3D4E5F6A1B2C3D4E5F6A1B2C3D",
-            "A1B2C3D4E5Ф6A1B2C3D4E5F6A1B2C3D",
+            "A1B2C3D4E5Ф6A1B2C3D4E5F6A1B2C33D",
             "A1B2C3D4E5F6A1B2C3D4E5F6A1B2C3DG", // Буква G
             "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4", // Нижний регистр
             "A1B2C3D4E5F6A1B2C3D4E5F6A1B2C3D_"  // Спецсимвол
@@ -92,3 +92,4 @@ public class ValidationTokenTest extends BaseTest{
 
 
 }
+
