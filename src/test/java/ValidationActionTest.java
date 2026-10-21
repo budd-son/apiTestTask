@@ -124,3 +124,4 @@ public class ValidationActionTest extends BaseTest {
         assertEquals(expectedMessage, message);
     }
 }
+
