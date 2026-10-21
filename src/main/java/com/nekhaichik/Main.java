@@ -5,7 +5,7 @@ package com.nekhaichik;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.print("A1B2C3D4E5F6A1B2C3D4E5F6A1B2C3".length());
+        System.out.print("A1B2C3D4E5Ф6A1B2C3D4E5F6A1B2C3D".length());
 
     }
 }
