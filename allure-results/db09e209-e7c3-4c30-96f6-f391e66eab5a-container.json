@@ -1,0 +1,1 @@
+{"uuid":"db09e209-e7c3-4c30-96f6-f391e66eab5a","name":"TC-4.10 /auth 200 + garbage → приложению 200 (тело игнорируется)","children":["da7c1f45-b3d2-46ae-8efb-945a0b49c28e"],"befores":[],"afters":[],"start":1792578564430,"stop":1792578564463}
